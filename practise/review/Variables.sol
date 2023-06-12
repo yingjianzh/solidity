@@ -13,10 +13,14 @@ contract Variables {
 
     uint numa = 88;
 
-    function dosomething() public {
+    function dosomething() public view returns(uint, address){
         uint numb = 99;  // 内存变量   就是在调用这个函数的时候才有这个变量
 
 
         uint time = block.timestamp; // 当前区块的时间戳   全局变量
+
+        address sender = msg.sender;  //msg.sender  调用这个函数的地址
+
+        return (time, sender);
     }
 }
