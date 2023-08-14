@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "addtotal",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"solidity/practise/review/ForWhile.sol": "ForWhile"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"solidity/practise/review/ForWhile.sol": {
+			"keccak256": "0xd408ceca8b5e7fd0b97f9baf04559eacc451f6b89d49af619cb96fe3d8fe795a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4c9c7f8192488eb2e5a0beea6210ac7c025a7497f8721320305bb11f5d00e749",
+				"dweb:/ipfs/QmNWEEvz7sGXtXD4JowsBLsrpmqHYXETwoh1g4iKuvdBKa"
+			]
+		}
+	},
+	"version": 1
+}
