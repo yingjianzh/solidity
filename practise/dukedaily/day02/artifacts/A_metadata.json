@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getName",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"practise/dukedaily/day02/09shadowing.sol": "A"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"practise/dukedaily/day02/09shadowing.sol": {
+			"keccak256": "0x6e03c5e6f23f19de5e370309de2f8771e16bfaf685fcdb16407a1f988c1650b0",
+			"license": "SEE LICENSE IN LICENSE",
+			"urls": [
+				"bzz-raw://2c01ad051e9dc00c0c3768bd22b4e81aae8f10ca3b1370f2fe3613bc75649aaf",
+				"dweb:/ipfs/QmdHjdj2LJtVNLaJYQbAzY8K1KMeUjDt3ia4b73pS4wXKv"
+			]
+		}
+	},
+	"version": 1
+}

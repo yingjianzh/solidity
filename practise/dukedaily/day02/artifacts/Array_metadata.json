@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"practise/dukedaily/day02/14library.sol": "Array"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"practise/dukedaily/day02/14library.sol": {
+			"keccak256": "0x7c2e1dd034ae57282b049e1cdb596af5d5075cf963a3bcd581dde7d4484ab3ee",
+			"license": "SEE LICENSE IN LICENSE",
+			"urls": [
+				"bzz-raw://d8b6203f97bf0e7c356e8ba93cf5bb8e434dd7ad6ec676b6c83b084f3830cf44",
+				"dweb:/ipfs/QmdMbubim1pVeEpBxmDmE6aKs94xcPdqscYweFZZkTxqk2"
+			]
+		}
+	},
+	"version": 1
+}
