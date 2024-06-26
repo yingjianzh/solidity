@@ -5,3 +5,64 @@
 4.如果对map类型使用delete，什么都不会发生；
 5.但如果对map类型中的一个键使用delete，则会删除与该键相关的值。
 */
+
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.13;
+
+contract Delete {
+
+    //01.  string
+    string public str1 = "hello";
+
+
+    function deleteStr() public {
+        delete str1;
+    }
+
+    function setStr(string memory input) public {
+        str1 = input;
+    }
+
+
+    ///02. array 对于固定长度的数组，会删除每个元素的值，但是数组长度不变
+    uint256[10] public array1 = [1,2,3,4,5,6];
+
+    function deleteFiexedArray() public {
+        delete array1;
+    }
+
+
+    //03. array new
+    uint256[] arry2 ;
+    function setArray2() public {
+        arry2 = new uint256[](10);
+        for (uint256 i = 0; i < arry2.length; i++) {
+            arry2[i] = i;
+        }
+    }
+
+    function getArray2() public view returns(uint256[] memory) {
+        return arry2;
+    }
+
+    function deleteArray2() public {
+        delete arry2;
+    }
+
+    //04. mapping
+    mapping(uint256 => string) public m1;
+
+    function setMap() public {
+        m1[0] = "hello";
+        m1[1] = "world";
+    }
+
+    //Mapping不允许直接使用delete，但是可以对mapping的元素进行指定删除
+    // function deleteM1() public {
+    //     delete m1;
+    // }    
+
+    function deleteMapping(uint256 i) public {
+        delete m1[i];
+    }
+}
