@@ -12,13 +12,6 @@ abstract和interface的区别 (https://medium.com/upstate-interactive/solidity-h
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
-contract Counter {
-    uint public cou(nt;
-
-    function increment() external {
-        count += 1;        
-    }
-}
 
 interface IBase {
     function count() external view returns (uint);
@@ -27,6 +20,20 @@ interface IBase {
 interface ICounter is IBase {
     function increment() external;
 }
+
+//Solidity 不允许在同一个合约中有同名的变量和函数
+contract Counter is ICounter {
+    uint public _count;
+
+    function increment() external override {
+        _count += 1;        
+    }
+
+    function count() external view override returns (uint) {
+        return _count;
+    }
+}
+
 
 contract MyContract {
     function incrementCounter(address _counter) external {
